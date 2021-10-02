@@ -1,15 +1,11 @@
 import React from 'react';
 import './App.css';
-import Recipe from './recipe';
+import RecipeList from './recipe-list';
 
 function App() {
 	return (
 		<div className='App'>
-			<Recipe
-				imgplato='https://www.clasificacionde.org/wp-content/uploads/2019/01/Tipos-de-Dieta.jpg'
-				nombre='Frutales'
-				tipodieta='medio'
-			/>
+			<RecipeList />
 		</div>
 	);
 }
