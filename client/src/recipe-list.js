@@ -32,7 +32,11 @@ function RecipeList() {
 		<RecipeListstyled>
 			{recipeList.map((recipe) => {
 				return (
-					<Recipe imagen={recipe.image} name={recipe.title} tipodieta='medio' />
+					<Recipe
+						imagen={recipe.image}
+						name={recipe.title}
+						tipodieta='Intenso'
+					/>
 				);
 			})}
 		</RecipeListstyled>
