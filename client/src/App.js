@@ -9,7 +9,16 @@ const inicialState = {
 };
 
 function reducer(state, action) {
-	return state;
+	console.log(action);
+	switch (action.type) {
+		case 'SET_RECIPE_LIST': {
+			console.log('voy actualizar la lista de recetas');
+			return { ...state, recipeList: action.payload };
+		}
+		default: {
+			return state;
+		}
+	}
 }
 const store = createStore(reducer, inicialState);
 
